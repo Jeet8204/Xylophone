@@ -19,7 +19,8 @@ class XylophoneApp extends StatelessWidget {
     return Expanded(
       child: TextButton(
         style: TextButton.styleFrom(
-          backgroundColor: color, // Setting the background color
+          backgroundColor: color,
+          shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero) // Setting the background color
         ),
         onPressed: () {
           playSound(buttonNumber);
